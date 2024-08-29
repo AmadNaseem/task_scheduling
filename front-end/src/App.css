@@ -1,0 +1,165 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+} */
+
+/*
+  TODO: find out why the boxes move around horizontally depending on how much text 
+  is in them, regardless of setting width
+*/
+
+#navbar {
+	width: 100%;
+	float: left;
+	margin: 0;
+	padding: 5px 0;
+  list-style: none;
+  background-color: #aae4ee;
+}
+.navbar-left {
+  float: left; 
+  border-left: 1px solid #000000; 
+}
+.navbar-right {
+  float: right; 
+  border-right: 1px solid #000000; 
+}
+#navbar li a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #2687bb;
+}
+
+.list-header {
+  margin: 0;
+  padding: 0px;
+  width: 300px;
+  font-size: 20px;
+}
+
+.list-header > li {
+  width: 100%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: lightblue;
+  list-style: none;
+}
+
+.list-header > li:last-child {
+  border-bottom-left-radius: 10px;
+}
+
+.list-header > li:hover {
+  background-color: blue;
+  font-weight: bold;
+  color: white;
+}
+
+.list-header > li.active {
+  color: white;
+  background-color: blue;
+}
+
+.lists {
+  /* width: 700px; */
+  max-width: 1000px;
+  padding: 25px;
+  /* note: temporary */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.list-tasks {
+  font-weight: bold;
+  color: black;
+  padding: 10px;
+  margin: 0 20px;
+  border: 2px solid black;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: flex-end;
+  background-color: lightblue;
+} 
+
+.task-title {
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+.task-description {
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+
+.bottom-crud-buttons {
+  padding-bottom: 15px;
+  font-size: 14px;
+}
+
+.deleteTaskButton {
+  float: right;
+}
+
+.addTaskButton {
+  width: 100px;
+}
+
+.login-container {
+  padding: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  .lists {
+    width: 100%;
+    /* note: temporary */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
